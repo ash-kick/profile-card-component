@@ -1,15 +1,139 @@
+.kumbh-sans-font {
+     font-family: "Kumbh Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400, 700;
+     font-style: normal;
+     font-variation-settings: "YOPQ" 300;
+}
 
-.kumbh-sans-font{
-    font-family: "Kumbh Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400,700;
-    font-style: normal;
-    font-variation-settings:
-      "YOPQ" 300;
-  }
+html,
+body {
+     font-family: "Kumbh Sans", sans-serif;
+     font-size: 18px;
+     font-weight: 400;
+     background-color: hsl(185, 75%, 39%);
+     width: 100%;
+     height: 100%;
+}
 
-html {
-    font-family:  "Kumbh Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+main {
+     display: flex;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+}
+
+.top-background-image {
+     position: relative;
+     clip-path: xywh(300px 400px 100% 100%);
+}
+
+.bottom-background-image {
+     clip-path: xywh(0px 50px 75% 25%);
+}
+
+.bottom-background-box {
+     bottom: 0;
+     right: 0;
+}
+
+.top-background-box {
+     top: 0;
+     left: 0;
+     padding: 0;
+}
+
+.profile-box {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     align-self: center;
+     background-color: white;
+     padding-bottom: 15px;
+     border-radius: 15px;
+     height: 26rem;
+     width: 25rem;
+     position: absolute;
+}
+
+.upper-background-container,
+.upper-background-image {
+     width: 100%;
+     border-radius: 15px 15px 0px 0px;
+     padding-bottom: 2.5rem;
+}
+
+.profile-picture-container {
+     padding: 6rem;
+     position: absolute;
+     align-self: center;
+}
+
+.profile-picture {
+     border-radius: 50%;
+     border-color: white;
+     border-width: 5px;
+     border-style: solid;
+     width: 7rem;
+}
+
+.profile-name-age {
+     display: flex;
+     align-self: center;
+     gap: 1rem;
+}
+
+.profile-name {
+     font-size: 22px;
+     font-weight: 700;
+     color: hsl(229, 23%, 23%);
+     line-height: 1.5;
+}
+
+.profile-age {
+     color: hsl(227, 10%, 46%);
+     font-weight: 400;
+     font-size: 26px;
+}
+
+.profile-age {
+     color: hsl(227, 10%, 46%);
+     font-weight: 400;
+     font-size: 26px;
+}
+
+.profile-location {
+     color: hsl(227, 10%, 46%);
+     line-height: 2;
+}
+
+hr {
+     color: hsl(0, 0%, 59%);
+     border-style: solid;
+     width: 100%;
+}
+
+.profile-stats {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     padding-top: 15px;
+}
+
+.followers-number,
+.likes-number,
+.photos-number {
+     font-weight: 700;
+     font-size: 26px;
+     color: hsl(229, 23%, 23%);
+}
+
+.followers-label,
+.likes-label,
+.photos-label {
+     font-weight: 300;
+     font-size: 16px;
+     color: hsl(227, 10%, 46%);
 }
